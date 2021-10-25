@@ -2,9 +2,9 @@
     
 	$n=count($arResult);
 	if($arResult['ID_USER']){
-		echo 'Ваш ID '.$arResult['ID_USER'];
+		echo 'Ваш ID '.$arResult['ID_USER'].'<br/>';
 		
-		if ($arResult){?>
+		if ($arResult['COL_ROWS']>0){?>
             <table border="1">
             <tr><td>ID пользователя</td><td>Адрес пользователя</td><td>Активность адреса</td></tr>
 
